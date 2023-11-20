@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style/new_calculator.css">
+    <link rel="stylesheet" href="Style/dark_mode.css">
+</head>
+<body>
+    <div id="calci-body">
+        <div id="calci">
+            <div class="display" id="display"></div>
+            <div id="grid">
+
+                <button class="button" id="ac">AC</button>
+                <button class="button" id="del">DEL</button>
+                <button class="button operator" id="btn+" value="+" onclick="disp('+')">+</button>
+                
+                <button class="button" id="btn7" value="7" onclick="disp('7')">7</button>
+                <button class="button" id="btn8" value="8" onclick="disp('8')">8</button>
+                <button class="button" id="btn9" value="9" onclick="disp('9')">9</button>
+                <button class="button operator" id="btn-" value="-" onclick="disp('-')">-</button>
+                
+                <button class="button" id="btn4" value="4" onclick="disp('4')">4</button>
+                <button class="button" id="btn5" value="5" onclick="disp('5')">5</button>
+                <button class="button" id="btn6" value="6" onclick="disp('6')">6</button>
+                <button class="button operator" id="btn*" value="*" onclick="disp('*')">*</button>
+                
+                <button class="button" id="btn1" value="1" onclick="disp('1')">1</button>
+                <button class="button" id="btn2" value="2" onclick="disp('2')">2</button>
+                <button class="button" id="btn3" value="3" onclick="disp('3')">3</button>
+                <button class="button operator" id="btn/" value="/" onclick="disp('/')">/</button>
+                
+                <button class="button" id="btn." value="." onclick="disp('.')">.</button>
+                <button class="button" id="btn0" value="0" onclick="disp('0')">0</button>
+                <button class="button evaluate" id="eval" value="=">=</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="layer">
+            <div id="circle"></div>
+        </div>
+    </div>
+
+    <script src="Script/new_calculator.js"></script> 
+    <script src="Script/dark_mode.js"></script>
+</body>
+</html>
